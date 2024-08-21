@@ -1,0 +1,5 @@
+{
+  "type": "CompletionInfoRequest",
+  "callbackUrl": "https://www.mydid.com",
+  "infoListUrl": "https://iguana-discontinuan.000webhostapp.com/info_2.json"
+}

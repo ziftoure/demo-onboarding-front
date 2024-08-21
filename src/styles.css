@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Satoshi';
+    src: local('Satoshi'), url(../assets/fonts/Satoshi-Light.otf);
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: local('Satoshi'), url(../assets/fonts/Satoshi-Regular.otf);
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: local('Satoshi'), url(../assets/fonts/Satoshi-Medium.otf);
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: local('Satoshi'), url(../assets/fonts/Satoshi-Bold.otf);
+    font-weight: 600;
+  }
+
+  @media (min-width: 768px) {
+    .text-xs {
+      font-size: 0.875rem !important;
+      line-height: 1.25rem !important;
+    }
+    .text-sm {
+      font-size: 1rem !important;
+      line-height: 1.5rem !important;
+    }
+    html {
+      font-size: 1.125rem !important;
+      line-height: 1.75rem !important;
+    }
+    .text-lg {
+      font-size: 1.25rem !important;
+      line-height: 1.75rem !important;
+    }
+    .text-xl {
+      font-size: 1.5rem !important;
+      line-height: 2rem !important;
+    }
+    .text-2xl {
+      font-size: 1.875rem !important;
+      line-height: 2.25rem !important;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .text-xs {
+      font-size: 1rem !important;
+      line-height: 1.5rem !important;
+    }
+    .text-sm {
+      font-size: 1.125rem !important;
+      line-height: 1.75rem !important;
+    }
+    html {
+      font-size: 1.25rem !important;
+      line-height: 1.75rem !important;
+    }
+    .text-lg {
+      font-size: 1.5rem !important;
+      line-height: 2rem !important;
+    }
+    .text-xl {
+      font-size: 1.875rem !important;
+      line-height: 2.25rem !important;
+    }
+    .text-2xl {
+      font-size: 2.25rem !important;
+      line-height: 2.5rem !important;
+    }
+  }
+
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}
+
+@layer components {
+  body {
+    @apply h-screen;
+  }
+
+  @media (min-width: 1024px) {
+    body {
+      @apply bg-[url('/assets/images/background.png')] bg-[length:700px] bg-no-repeat bg-[left_-20rem_top_10rem] bg-opacity-20;
+    }
+  }
+
+  #app {
+    @apply flex flex-col h-screen;
+  }
+
+  p {
+    @apply text-gray-900;
+  }
+
+  div {
+    @apply text-gray-900;
+  }
+}
